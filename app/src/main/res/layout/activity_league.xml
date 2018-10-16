@@ -24,7 +24,7 @@
             android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             android:contentDescription="@string/logo"/>
     <TextView
-            android:text="Desired League"
+            android:text="@string/desired_league"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/goAllIn"
@@ -46,7 +46,7 @@
             app:layout_constraintBottom_toTopOf="@+id/womensBtn"
             app:layout_constraintVertical_chainStyle="packed" android:textAppearance="@style/TextAppearance.AppCompat"
             android:fontFamily="@font/montserrat" android:textColor="@android:color/background_light"
-            tools:text="Mens" android:textOff="@string/mens" android:textOn="@string/mens"/>
+            tools:text="Mens" android:textOff="@string/mens" android:textOn="@string/mens" android:onClick="onMensClicked"/>
     <ToggleButton
             android:text="@string/womens"
             android:layout_width="0dp"
@@ -59,7 +59,8 @@
             app:layout_constraintBottom_toTopOf="@+id/coedBtn" android:layout_marginBottom="25dp"
             android:layout_marginTop="25dp" android:textAppearance="@style/TextAppearance.AppCompat"
             android:fontFamily="@font/montserrat" android:textColor="@android:color/background_light"
-            tools:text="Womens" android:textOff="@string/womens" android:textOn="@string/womens"/>
+            tools:text="Womens" android:textOff="@string/womens" android:textOn="@string/womens"
+            android:onClick="onWomensClicked"/>
     <ToggleButton
             android:text="@string/co_ed"
             android:layout_width="0dp"
@@ -72,7 +73,7 @@
             app:layout_constraintBottom_toTopOf="@+id/background"
             android:textAppearance="@style/TextAppearance.AppCompat" android:fontFamily="@font/montserrat"
             android:textColor="@android:color/background_light" tools:text="Co-ed" android:textOff="@string/co_ed"
-            android:textOn="@string/co_ed"/>
+            android:textOn="@string/co_ed" android:onClick="onCoedClicked"/>
     <Button
             android:text="@string/next"
             android:layout_width="0dp"
@@ -84,6 +85,6 @@
             android:background="@drawable/swoosh_button" android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp" android:onClick="leagueNextClicked"/>
     <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                          android:id="@+id/guideline" app:layout_constraintGuide_begin="197dp"
-                                          android:orientation="horizontal"/>
+                                          android:id="@+id/guideline"
+                                          android:orientation="horizontal" app:layout_constraintGuide_end="413dp"/>
 </android.support.constraint.ConstraintLayout>
