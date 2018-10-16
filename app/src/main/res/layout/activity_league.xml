@@ -79,10 +79,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/nextBtn" android:textSize="18sp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/background" style="@style/Widget.AppCompat.Button"
             android:textColor="@android:color/background_light" android:fontFamily="@font/montserrat"
-            android:background="@drawable/swoosh_button"/>
+            android:background="@drawable/swoosh_button" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" android:onClick="leagueNextClicked"/>
     <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
                                           android:id="@+id/guideline" app:layout_constraintGuide_begin="197dp"
                                           android:orientation="horizontal"/>
