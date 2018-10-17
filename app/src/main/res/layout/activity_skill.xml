@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".Controllers.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -41,7 +41,7 @@
             android:textColor="@android:color/background_light" android:textOff="@string/begginer"
             android:textOn="@string/begginer" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:fontFamily="@font/montserrat"/>
+            android:fontFamily="@font/montserrat" android:onClick="onBegginerClick"/>
     <ToggleButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:textColor="@android:color/background_light" android:textOff="@string/baller"
             android:textOn="@string/baller"
             android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
-            android:fontFamily="@font/montserrat"/>
+            android:fontFamily="@font/montserrat" android:onClick="onBallerClick"/>
 
     <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
                                           android:id="@+id/guideline2"
@@ -65,7 +65,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/background" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp" android:fontFamily="@font/montserrat" android:textSize="18sp"
-            android:textColor="@android:color/background_light" android:background="@drawable/swoosh_button"/>
+            android:textColor="@android:color/background_light" android:background="@drawable/swoosh_button"
+            android:onClick="onFinishClick"/>
 
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.aleapp.swoosh
+package com.aleapp.swoosh.Controllers
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
